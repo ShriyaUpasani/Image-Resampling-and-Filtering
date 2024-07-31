@@ -14,6 +14,7 @@ This project aims to provide a practical understanding of resampling and filteri
   - [Resampling](#resampling)
   - [Anti-aliasing](#anti-aliasing)
   - [Detail Overlay](#detail-overlay)
+- [Working](#working)  
 
 
 ## Overview
@@ -48,7 +49,7 @@ w: The width and height of the square window for the detailed overlay.
 
 ## Examples
 javac ImageDisplay.java; java ImageDisplay "aliasing_test_data_samples\aliasing_test1.rgb" 0.08 0 200   //AntiAliasing example
-javac ImageDisplay.java; java ImageDisplay "\16xHD_data_samples\national-park.rgb" 0.18 1 150  //Detail Overlay and scaling
+javac ImageDisplay.java; java ImageDisplay .\16xHD_data_samples\national-park.rgb 0.125 1 200  //Detail Overlay and scaling
 
 ## Implementation Details
 #### Resampling
@@ -61,3 +62,14 @@ When A is set to 1, an averaging low-pass filter is applied to the image to redu
 When the control key is pressed, the program overlays a detailed view of the original image around the mouse cursor in a w x w window. This allows users to see the fine details of the image while browsing.
 
 ## Working
+
+#### Detail overlay
+![gif-a1-overlay](https://github.com/user-attachments/assets/66cf32dc-86de-4698-93e8-4cbf87ebd7ed)
+
+#### Anti-aliasing
+##### Aliasing off
+![image](https://github.com/user-attachments/assets/e5f5f330-33e7-4f49-8089-a9545b9d2b91)
+
+##### Aliasing on
+![image](https://github.com/user-attachments/assets/5dd27085-db20-4c2d-a8f1-e71d89c1a29e)
+
