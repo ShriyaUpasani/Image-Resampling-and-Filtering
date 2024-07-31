@@ -30,9 +30,8 @@ This program resamples a given image and optionally applies an anti-aliasing fil
 
 ## Requirements
 
-- A C++ or Java compiler.
+- A Java compiler.
 - A system capable of displaying images.
-- Microsoft Visual Studio (for C++) or equivalent IDE.
 
 ## Installation
 
